@@ -1,15 +1,13 @@
+# SATOCHI IS AN ANGEL
+
+> **Version:** v0-not-human  
+
 ```text
 ========================================
    NΞØ SMART FACTORY · SMART CORE
 ========================================
 ```
 
-Multichain engine for tokenized asset
-creation, deployment and governance.
-
-> **Version:** v0.5.3-neural-core  
-> **License:** MIT  
-> **Node:** ≥22.0.0
 
 ```
 ─────────────────────++++++
@@ -39,7 +37,7 @@ creation, deployment and governance.
 ```
 
 ```
-                                                                                          ▄░
+     ▄░
   ▄██▄
  █  █ █░
  █ █░ █
