@@ -3,9 +3,9 @@
 
 - key: Description
   value:
-    - Arquiteto de ecossistemas digitais
-    - IA · Automação · Blockchain
-    - Infraestrutura descentralizada como linguagem de mercado
+    - Building Decentralized ecosystems
+
+
   typed: true
 
 - key: Namespace
@@ -18,9 +18,15 @@
 
 - key: Proofs
   value:
+    - key: Wallet
+      value: 0xE329EA473D4307B734487D2AB35281b4d2557CB7
+      url: https://basescan.org/address/0xE329EA473D4307B734487D2AB35281b4d2557CB7
     - key: GitHub
       value: NEO-PROTOCOL
       url: https://github.com/NEO-PROTOCOL
+    - key: OpenSea
+      value: Verified Collectibles
+      url: https://opensea.io/neomello.eth
 
 - key: Ecosystem
   value:

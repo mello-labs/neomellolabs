@@ -3,11 +3,10 @@
 Gem::Specification.new do |spec|
   spec.name          = "hacked-terminal"
   spec.version       = "3.1.0"
-  spec.authors       = ["piazzai"]
-  spec.email         = ["42124135+piazzai@users.noreply.github.com"]
-
-  spec.summary       = "Jekyll microtheme that looks like JSON"
-  spec.homepage      = "https://github.com/piazzai/hacked-jekyll"
+  spec.authors       = ["NΞØ MELLØ"]
+  spec.email         = ["neo@neoprotocol.space"]
+  spec.summary       = "NEØ PROTOCOL - Personal Identity Protocol"
+  spec.homepage      = "https://neoprotocol.space"
   spec.license       = "MIT"
 
   spec.files         = Dir.glob("{assets,_data,_layouts,_includes,_sass,LICENSE,README,_config.yml}/**/*").select { |f| File.file?(f) }

@@ -15,12 +15,16 @@
   <link rel="manifest" href="{{ 'assets/site.webmanifest' | relative_url }}">
   <link rel="stylesheet" href="{{ 'assets/css/normalize.css' | relative_url }}" />
   <link rel="stylesheet" href="{{ 'assets/css/open-color.css' | relative_url }}" />
-  <link rel="stylesheet" href="{{ 'assets/css/styles.css' | relative_url }}" />
+  <link rel="stylesheet" href="{{ 'assets/styles.css' | relative_url }}" />
   <script src="{{ 'assets/js/typed.umd.js' | relative_url }}"></script>
 </head>
 
 <body>
   <main>
+    <div id="terminal-header">
+      Last login: {{ "now" | date: "%a %b %d %H:%M:%S" }} on ttys001<br>
+      neomello@mello-2:~$ cat profile.json
+    </div>
 
 {{ content }}
 
@@ -29,9 +33,10 @@
     var typed = new Typed("#typed", {
       stringsElement: "#strings",
       backSpeed: 10,
-      typeSpeed: 30,
+      typeSpeed: 40,
       backDelay: 1000,
-      loop: true,
+      loop: false,
+      cursorChar: '█',
       smartBackspace: true,
     });
   </script>

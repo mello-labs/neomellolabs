@@ -1,5 +1,0 @@
-source 'https://rubygems.org'
-
-gem 'hacked-jekyll', '~> 3.1'
-gem 'csv', '~> 3.3', '>= 3.3.5'
-gem 'webrick', '~> 1.9', '>= 1.9.2'

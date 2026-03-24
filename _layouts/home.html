@@ -1,4 +1,3 @@
-<!doctype html>
 ---
 layout: default
 ---
@@ -32,7 +31,7 @@ layout: default
 
 <div id="json">
   {% for pair in site.data.json %}
-  <div class="my ms">
+  <div class="ms">
     {% if pair.typed -%}
     <div id="strings">
       {% for value in pair.value -%}
@@ -45,21 +44,21 @@ layout: default
     {{ quote_key }}<span class="key">{{ pair.key }}</span>{{ quote_key }}: {
     {% for value in pair.value -%}
     {% if value.url -%}
-    <p class="ms">
+    <div class="ms">
       {{ quote_key }}<span class="key">{{ value.key }}</span>{{ quote_key }}:
       {{ quote_value }}<a class="value" href="{{ value.url | relative_url }}" target="{{ tab }}">{{ value.value }}</a>{{ quote_value }}
       {%- unless forloop.last -%}
       {{ comma }}
       {%- endunless %}
-    </p>
+    </div>
     {% else -%}
-    <p class="ms">
+    <div class="ms">
       {{ quote_key }}<span class="key">{{ value.key }}</span>{{ quote_key }}:
       {{ quote_value }}<span class="value">{{ value.value }}</span>{{ quote_value }}
       {%- unless forloop.last -%}
       {{ comma }}
       {%- endunless %}
-    </p>
+    </div>
     {% endif -%}
     {%- endfor -%}
     }
@@ -67,19 +66,19 @@ layout: default
     {{ quote_key }}<span class="key">{{ pair.key }}</span>{{ quote_key }}: [
     {% for value in pair.value -%}
     {% if value.url -%}
-    <p class="ms">
+    <div class="ms">
       {{ quote_value }}<a class="value" href="{{ value.url | relative_url }}" target="{{ tab }}">{{ value.value }}</a>{{ quote_value }}
       {%- unless forloop.last -%}
       {{ comma }}
       {%- endunless %}
-    </p>
+    </div>
     {% else -%}
-    <p class="ms">
+    <div class="ms">
       {{ quote_value }}<span class="value">{{ value }}</span>{{ quote_value }}
       {%- unless forloop.last -%}
       {{ comma }}
       {%- endunless %}
-    </p>
+    </div>
     {% endif -%}
     {%- endfor -%}
     ]

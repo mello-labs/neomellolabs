@@ -1,5 +1,6 @@
 ---
 ---
+
 @use "sass:string";
 
 {% assign _bg    = site.color_bg    | default: 'gray-9'  %}
@@ -37,5 +38,5 @@ $transform_value: lowercase;
   $transform_key: $transform_key,
   $transform_value: $transform_value
 );
-@use "custom";
 
+@use "custom";
