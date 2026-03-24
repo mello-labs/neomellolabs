@@ -1,0 +1,19 @@
+title: NEØ MELLØ
+description: MINIMALIST CENTRAL BASE JSON
+baseurl: /neomello
+url: https://nettomello.github.io/neomello
+
+theme: hacked-terminal
+
+exclude:
+  - LICENSE
+  - README.md
+  - Gemfile
+  - vendor/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+sass:
+  sourcemap: never

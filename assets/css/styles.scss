@@ -1,5 +1,6 @@
 ---
 ---
+@use "sass:string";
 
 {% assign _bg    = site.color_bg    | default: 'gray-9'  %}
 {% assign _punct = site.color_punct | default: 'green-9' %}
@@ -7,11 +8,11 @@
 {% assign _value = site.color_value | default: 'green-4' %}
 {% assign _hover = site.color_hover | default: 'green-5' %}
 
-$color_bg:    unquote("var(--oc-{{ _bg }})");
-$color_punct: unquote("var(--oc-{{ _punct }})");
-$color_key:   unquote("var(--oc-{{ _key }})");
-$color_value: unquote("var(--oc-{{ _value }})");
-$color_hover: unquote("var(--oc-{{ _hover }})");
+$color_bg:    string.unquote("var(--oc-{{ _bg }})");
+$color_punct: string.unquote("var(--oc-{{ _punct }})");
+$color_key:   string.unquote("var(--oc-{{ _key }})");
+$color_value: string.unquote("var(--oc-{{ _value }})");
+$color_hover: string.unquote("var(--oc-{{ _hover }})");
 
 {% if site.lowercase == "keys" %}
 $transform_key:   lowercase;
@@ -27,5 +28,14 @@ $transform_key:   lowercase;
 $transform_value: lowercase;
 {% endif %}
 
-@import "default";
-@import "custom";
+@use "default" with (
+  $color_bg: $color_bg,
+  $color_punct: $color_punct,
+  $color_key: $color_key,
+  $color_value: $color_value,
+  $color_hover: $color_hover,
+  $transform_key: $transform_key,
+  $transform_value: $transform_value
+);
+@use "custom";
+
